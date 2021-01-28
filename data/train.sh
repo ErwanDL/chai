@@ -1,10 +1,5 @@
 #! /bin/bash
 
-
-if [ ! -f $OpenNMT_py/preprocess.py ]; then
-    print "OpenNMT_py environment variable should be set"
-    exit 1
-fi
 if [ ! -d $data_path ]; then
     data_path="/home/z/zimin/pfs/deepmutation_OpenNMT/data/50"
     if [ ! -d $data_path ]; then
